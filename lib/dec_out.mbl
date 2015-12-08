@@ -1,4 +1,5 @@
-# prints a marble as three decimal digits
+# dec_out.mbl
+# Decimal output of marbles
 }0
 Dp
 
@@ -45,6 +46,7 @@ De co ut
 
 # modulo ten
 # while(}0>10){ }0-=10 } {0=}0
+# TODO constant runtime
 :%A
 @0 ..
 }0 ..
