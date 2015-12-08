@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>fileTypes</key>
+    <array>
+        <string>mbl</string>
+    </array>
+    <key>name</key>
+    <string>Marbelous</string>
+    <key>patterns</key>
+    <array>
+        <dict>
+            <key>comment</key>
+            <string>include of another source file</string>
+            <key>match</key>
+            <string>^#include .*</string>
+            <key>name</key>
+            <string>keyword.control.import</string>
+        </dict>
+        <dict>
+            <key>comment</key>
+            <string>comment</string>
+            <key>match</key>
+            <string>#.*</string>
+            <key>name</key>
+            <string>comment</string>
+        </dict>
+        <dict>
+            <key>comment</key>
+            <string>board name</string>
+            <key>match</key>
+            <string>^:[^ ]*</string>
+            <key>name</key>
+            <string>entity.name.function</string>
+        </dict>
+        <dict>
+            <key>comment</key>
+            <string>hex marble</string>
+            <key>match</key>
+            <string>[0-9A-F][0-9A-F]</string>
+            <key>name</key>
+            <string>constant</string>
+        </dict>
+        <dict>
+            <key>comment</key>
+            <string>character literal marble</string>
+            <key>match</key>
+            <string>'.</string>
+            <key>name</key>
+            <string>constant.character</string>
+        </dict>
+        <dict>
+            <key>comment</key>
+            <string>board input device</string>
+            <key>match</key>
+            <string>\}[0-9A-F]</string>
+            <key>name</key>
+            <string>variable.parameter.function</string>
+        </dict>
+        <dict>
+            <key>comment</key>
+            <string>board output device</string>
+            <key>match</key>
+            <string>\{[0-9A-F&lt;&gt;]</string>
+            <key>name</key>
+            <string>variable.parameter.function</string>
+        </dict>
+        <dict>
+            <key>comment</key>
+            <string>marble manipulation device</string>
+            <key>match</key>
+            <string>(\\/|/\\|\\\\|//|@[0-9A-F])</string>
+            <key>name</key>
+            <string>keyword.operator.marbelous.manipulation</string>
+        </dict>
+        <dict>
+            <key>comment</key>
+            <string>marble manipulation device</string>
+            <key>match</key>
+            <string>(\+\+|--|[+-][0-9A-Z])</string>
+            <key>name</key>
+            <string>keyword.operator.marbelous.arithmetic</string>
+        </dict>
+        <dict>
+            <key>comment</key>
+            <string>bit manipulation device</string>
+            <key>match</key>
+            <string>(&gt;&gt;|&lt;&lt;|\^[0-9A-Z]|~~)</string>
+            <key>name</key>
+            <string>keyword.operator.marbelous.bitwise</string>
+        </dict>
+        <dict>
+            <key>comment</key>
+            <string>conditional device</string>
+            <key>match</key>
+            <string>([=&gt;&lt;][0-9A-Z])</string>
+            <key>name</key>
+            <string>keyword.control.marbelous.conditional</string>
+        </dict>
+        <dict>
+            <key>comment</key>
+            <string>synchronizer device</string>
+            <key>match</key>
+            <string>(&amp;[0-9A-Z])</string>
+            <key>name</key>
+            <string>keyword.control.marbelous.synchronizer</string>
+        </dict>
+        <dict>
+            <key>comment</key>
+            <string>random device</string>
+            <key>match</key>
+            <string>(\?[?0-9A-Z])</string>
+            <key>name</key>
+            <string>keyword.operator.random.marbelous</string>
+        </dict>
+        <dict>
+            <key>comment</key>
+            <string>exit device</string>
+            <key>match</key>
+            <string>(!!)</string>
+            <key>name</key>
+            <string>keyword.control.marbelous.exit</string>
+        </dict>
+        <dict>
+            <key>comment</key>
+            <string>stdin device</string>
+            <key>match</key>
+            <string>(]])</string>
+            <key>name</key>
+            <string>keyword.operator.marbelous.stdin</string>
+        </dict>
+        <dict>
+            <key>comment</key>
+            <string>stdout device</string>
+            <key>match</key>
+            <string>(\[\[)</string>
+            <key>name</key>
+            <string>keyword.operator.marbelous.stdout</string>
+        </dict>
+        <dict>
+            <key>comment</key>
+            <string>whitespace</string>
+            <key>match</key>
+            <string>(  |\.\.)</string>
+            <key>name</key>
+            <string>punctuation.whitespace</string>
+        </dict>
+    </array>
+    <key>scopeName</key>
+    <string>source.marbelous</string>
+    <key>uuid</key>
+    <string>25e80a8c-f687-4043-9b5d-d986e50ad652</string>
+</dict>
+</plist>
